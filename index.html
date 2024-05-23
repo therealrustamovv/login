@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in-up</title>
+    <link rel="icon" href="./images/logo.svg" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="backtop" class="backtop-show">
+      <a href="#"><img src="./images/top.png" alt="top" class="top-img" /></a>
+    </div>
+    <!-- header start -->
+    <header class="header">
+      <nav class="nav">
+        <div class="container">
+          <div class="nav-center">
+            <div class="nav-info">
+              <img src="./images/logo.svg" alt="logo" class="nav-img" />
+              <div class="nav-right">
+                <ul class="nav-list">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">About </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Contacts</a>
+                  </li>
+                </ul>
+                <div class="nav-buttons">
+                  <a href="./pages/login.html" class="nav-btn">Log in</a>
+                  <a href="./pages/login.html" class="nav-btn"
+                    >Open an account</a
+                  >
+                  <a href="#" class="nav-btn" id="language">EN</a>
+                </div>
+              </div>
+            </div>
+            <button class="hamburger" id="navbar-open">
+              <img src="images/menu.svg" alt="menu" />
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div id="navbar-responsive">
+        <div class="res-nav-right">
+          <ul class="res-nav-list">
+            <li class="res-nav-item">
+              <a href="#" class="res-nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="res-nav-link">About </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="res-nav-link">Contacts</a>
+            </li>
+          </ul>
+          <div class="res-nav-buttons">
+            <a href="./pages/login.html" class="res-nav-btn">Log in</a>
+            <a href="./pages/login.html" class="res-nav-btn">Open an account</a>
+            <a href="#" class="res-nav-btn" id="language">EN</a>
+          </div>
+          <button id="navbar-close">
+            <img src="./images/close.png" alt="close" class="close" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main class="main">
+      <form autocomplete="on">
+        <div class="main-sections">
+          <section id="register">
+            <div class="register-top">
+              <img src="./images/logo.svg" alt="logo" class="register-img" />
+              <h2 class="register-title">Welcome to ByTrend!</h2>
+              <div class="register-top-links">
+                <p class="register-top-text">Already have an account?</p>
+                <a href="./pages/login.html" class="register-top-link"
+                  ><u>Log in</u></a
+                >
+              </div>
+            </div>
+          </section>
+          <section id="main-bottom">
+            <div class="bottom-inputs">
+              <div class="bottom-inputs-card">
+                <label for="firstname" class="inputs-card-label"
+                  >First name<span>*</span></label
+                >
+                <input
+                  oninvalid="this.setCustomValidity('Enter name')"
+                  class="inputs-card-input"
+                  type="text"
+                  value="Alexander"
+                  id="firstname"
+                  name="firstname"
+                  required
+                />
+              </div>
+              <div class="bottom-inputs-card">
+                <label for="lastname" class="inputs-card-label"
+                  >Last name<span>*</span></label
+                >
+                <input
+                  oninvalid="this.setCustomValidity('Enter surname')"
+                  class="inputs-card-input"
+                  type="text"
+                  placeholder="Your surname"
+                  id="lastname"
+                  name="lastname"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="bottom-birth">
+              <label for="date" class="bottom-birth-label"
+                >Birth date<span>*</span></label
+              >
+              <input
+                oninvalid="this.setCustomValidity('Enter birth')"
+                class="bottom-birth-input"
+                type="date"
+                required
+                value="1992-12-06"
+                name="date"
+                id="date"
+              />
+            </div>
+
+            <div class="bottom-male">
+              <label for="" class="bottom-male-label"
+                >Gender<span>*</span></label
+              >
+              <div class="male-bottom-big">
+                <div class="bottom-male-box">
+                  <input
+                    class="bottom-male-input"
+                    type="radio"
+                    value="female"
+                    name="gender"
+                    id="female"
+                    checked
+                  />
+                  <label for="female" class="male-box-label">Female</label>
+                </div>
+                <div class="bottom-male-box input-color">
+                  <input
+                    class="bottom-male-input"
+                    type="radio"
+                    value="male"
+                    name="gender"
+                    id="male"
+                  />
+                  <label for="male" class="male-box-label">Male</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="bottom-skype">
+              <label for="skype" class="skype-label">Skype</label>
+              <input
+                type="text"
+                placeholder="Your login Skype"
+                id="skype"
+                class="skype-input"
+                name="skype"
+              />
+            </div>
+
+            <div class="bottom-promo">
+              <label for="promo" class="promo-label">Promo</label>
+              <input
+                type="text"
+                placeholder="Your login Promo"
+                id="promo"
+                class="promo-input"
+                name="promo"
+              />
+            </div>
+
+            <a href="./pages/register-next.html" class="continue"
+              ><button class="continue-btn" type="submit">Continue</button>
+              <img
+                src="./images/continue.png"
+                alt="continue"
+                class="continue-img"
+              />
+            </a>
+          </section>
+        </div>
+      </form>
+    </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+    <footer class="footer">
+      <p class="footer-text">
+        ©2023 All Rights Reserved. Lorem Technologies, Inc.
+      </p>
+    </footer>
+    <!-- footer end -->
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

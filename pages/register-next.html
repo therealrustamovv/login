@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register next</title>
+    <link rel="icon" href="../images/logo.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div id="backtop" class="backtop-show">
+      <a href="#"><img src="../images/top.png" alt="top" class="top-img" /></a>
+    </div>
+    <!-- header start -->
+    <header class="header">
+      <nav class="nav">
+        <div class="container">
+          <div class="nav-center">
+            <div class="nav-info">
+              <img src="../images/logo.svg" alt="logo" class="nav-img" />
+              <div class="nav-right">
+                <ul class="nav-list">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">About </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Contacts</a>
+                  </li>
+                </ul>
+                <div class="nav-buttons">
+                  <a href="./login.html" class="nav-btn">Log in</a>
+                  <a href="./login.html" class="nav-btn">Open an account</a>
+                  <a href="#" class="nav-btn" id="language">EN</a>
+                </div>
+              </div>
+            </div>
+            <button class="hamburger" id="navbar-open">
+              <img src="../images/menu.svg" alt="menu" />
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div id="navbar-responsive">
+        <div class="res-nav-right">
+          <ul class="res-nav-list">
+            <li class="res-nav-item">
+              <a href="#" class="res-nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="res-nav-link">About </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="res-nav-link">Contacts</a>
+            </li>
+          </ul>
+          <div class="res-nav-buttons">
+            <a href="./login.html" class="res-nav-btn">Log in</a>
+            <a href="./login.html" class="res-nav-btn">Open an account</a>
+            <a href="#" class="res-nav-btn" id="language">EN</a>
+          </div>
+          <button id="navbar-close">
+            <img src="../images/close.png" alt="close" class="close" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main class="main">
+      <form autocomplete="on">
+        <div class="main-sections">
+          <section id="register">
+            <div class="register-top">
+              <img src="../images/logo.svg" alt="logo" class="register-img" />
+              <h2 class="register-title">Welcome to ByTrend!</h2>
+              <div class="register-top-links">
+                <p class="register-top-text">Already have an account?</p>
+                <a href="./login.html" class="register-top-link"
+                  ><u>Log in</u></a
+                >
+              </div>
+            </div>
+          </section>
+          <section id="about">
+            <div class="about-email">
+              <label for="email" class="label">Email<span>*</span></label>
+              <input
+                type="email"
+                class="input"
+                placeholder="Email address"
+                id="email"
+                oninvalid="this.setCustomValidity('Enter email')"
+                required
+              />
+            </div>
+            <div class="about-phone">
+              <label for="phone" class="label">Phone<span>*</span></label>
+              <div class="inputs">
+                <input
+                  type="phone"
+                  class="input-phone1"
+                  value="+7"
+                  id="phone"
+                  oninvalid="this.setCustomValidity('Enter phone')"
+                  required
+                />
+                <input
+                  type="phone"
+                  class="input-phone2"
+                  placeholder="965-748-89-90"
+                  oninvalid="this.setCustomValidity('Enter phone')"
+                  required
+                />
+              </div>
+            </div>
+            <div class="about-address">
+              <div class="about-country">
+                <label for="country" class="label">Country<span>*</span></label>
+                <select name="country" id="country" required>
+                  <option value="uzbekistan">Uzbekistan</option>
+                  <option value="tajikistan">Tajikistan</option>
+                  <option value="kazakistan">Kazakistan</option>
+                  <option value="falastin">Falastin</option>
+                  <option value="saudiarabiya">Saudiya Arabiya</option>
+                  <option value="russia" selected>Russia</option>
+                  <option value="enland">England</option>
+                </select>
+              </div>
+              <div class="about-city">
+                <label for="city" class="label">City<span>*</span></label>
+                <input
+                  type="text"
+                  class="city-iput"
+                  placeholder="Name of the city"
+                  oninvalid="this.setCustomValidity('Enter city')"
+                  required
+                />
+              </div>
+            </div>
+            <div class="about-password">
+              <div class="password-card">
+                <label for="password" class="label"
+                  >Password<span>*</span></label
+                >
+                <img
+                  src="../images/password.png"
+                  alt="password"
+                  class="password-img"
+                />
+              </div>
+              <div class="password-box">
+                <input
+                  type="password"
+                  class="input password-input"
+                  placeholder="************"
+                  id="password"
+                  oninvalid="this.setCustomValidity('Enter password')"
+                  required
+                />
+                <i class="bi bi-eye-slash password-i" id="toggle-password"></i>
+              </div>
+            </div>
+            <div class="about-confirmpassword">
+              <div class="password-card">
+                <label for="confirmpassword" class="label"
+                  >Confirm password<span>*</span></label
+                >
+              </div>
+              <div class="password-box">
+                <input
+                  type="password"
+                  class="input confirmpassword-input"
+                  id="confirmpassword"
+                  oninvalid="this.setCustomValidity('confirm password')"
+                  required
+                />
+              </div>
+            </div>
+            <a href="#" class="continue"
+              ><button class="continue-btn" type="submit">Register</button>
+              <img
+                src="../images/continue.png"
+                alt="continue"
+                class="continue-img"
+              />
+            </a>
+          </section>
+        </div>
+      </form>
+    </main>
+    <!-- main end -->
+
+    <!-- fooer start -->
+    <footer class="footer">
+      <p class="footer-text footer-text2">
+        By signing up, you are agreeing to our
+        <span>Terms & Conditions</span> and <span>Privacy Policy.</span>
+      </p>
+    </footer>
+    <!-- footer end -->
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
